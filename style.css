@@ -198,6 +198,29 @@ ul { list-style: none; }
   display: flex; flex-wrap: wrap; gap: 12px;
   margin-bottom: 32px;
 }
+.hero-rating {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-bottom: 24px;
+}
+.rating-badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 13px; font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+.rating-badge svg { color: #f59e0b; flex-shrink: 0; }
+.rating-badge strong { color: var(--text-primary); font-weight: 700; }
+.rating-badge-gold {
+  background: rgba(245,158,11,0.08);
+  border-color: rgba(245,158,11,0.2);
+  color: #fbbf24;
+}
+.rating-badge-gold svg { color: #fbbf24; }
+
 .hero-facts {
   display: flex; flex-wrap: wrap; gap: 16px 24px;
 }
