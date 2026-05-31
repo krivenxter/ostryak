@@ -19,6 +19,20 @@ if (menuToggle && navMobile) {
   });
 }
 
+// Marquee seamless loop
+function initMarquee() {
+  const track = document.querySelector('.marquee-track');
+  const group = document.querySelector('.marquee-group');
+  if (!track || !group) return;
+  const width = group.offsetWidth;
+  track.style.setProperty('--marquee-width', `${width}px`);
+  // Adjust duration based on width so speed stays consistent (~100px/s)
+  const duration = Math.max(15, width / 100);
+  track.style.setProperty('--marquee-duration', `${duration}s`);
+}
+initMarquee();
+window.addEventListener('resize', initMarquee);
+
 // Scroll reveal animations with stagger
 const revealElements = document.querySelectorAll('.reveal');
 

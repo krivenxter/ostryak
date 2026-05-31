@@ -733,14 +733,20 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
   .marquee { font-size: 18px; padding: 18px 0; }
 }
 .marquee-track {
-  display: inline-flex;
+  display: flex;
+  width: max-content;
   align-items: center;
-  gap: 32px;
-  animation: marquee-scroll 25s linear infinite;
-  padding-right: 32px;
+  animation: marquee-scroll var(--marquee-duration, 25s) linear infinite;
 }
 .marquee:hover .marquee-track {
   animation-play-state: paused;
+}
+.marquee-group {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding-right: 32px;
+  flex-shrink: 0;
 }
 .marquee-dot {
   width: 8px; height: 8px;
@@ -750,7 +756,7 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
 }
 @keyframes marquee-scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  100% { transform: translateX(calc(-1 * var(--marquee-width, 25%))); }
 }
 
 /* ===== Grain Texture ===== */
