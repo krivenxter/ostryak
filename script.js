@@ -51,11 +51,11 @@ const revealObserver = new IntersectionObserver((entries) => {
 revealElements.forEach((el) => revealObserver.observe(el));
 
 // Stagger children within grids
-const staggerContainers = document.querySelectorAll('.cards-grid, .menu-preview-grid, .menu-layout, .spice-grid, .events-grid, .contacts-grid, .gallery-grid');
+const staggerContainers = document.querySelectorAll('.cards-grid, .menu-preview-grid, .menu-layout, .spice-grid, .events-grid, .contacts-grid, .gallery-scroll-track');
 const staggerObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      const children = entry.target.querySelectorAll('.reveal, .card, .menu-preview-card, .menu-category, .spice-card, .events-text, .contacts-card, .gallery-item');
+      const children = entry.target.querySelectorAll('.reveal, .card, .menu-preview-card, .menu-category, .spice-card, .events-text, .contacts-card, .gallery-scroll-item');
       children.forEach((child, i) => {
         child.style.transitionDelay = `${i * 0.08}s`;
         child.classList.add('visible');
