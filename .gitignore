@@ -1,0 +1,4 @@
+node_modules/
+*.html.bak
+chatgpt.html
+package-lock.json

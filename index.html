@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гастробар Остряк — острая кухня, гриль и банкеты в Санкт-Петербурге</title>
+  <meta name="description" content="Гастробар Остряк на Некрасова, 44: бургеры, тартар, стейки, гриль, авторская кухня, острота блюд на выбор, банкеты и события в центре Петербурга.">
+  <meta property="og:title" content="Гастробар Остряк — острая кухня, гриль и банкеты в Санкт-Петербурге">
+  <meta property="og:description" content="Гастробар Остряк на Некрасова, 44: бургеры, тартар, стейки, гриль, авторская кухня, острота блюд на выбор, банкеты и события в центре Петербурга.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero-food.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Остряк</a>
+      <nav class="nav-desktop">
+        <a href="#about">О гастробаре</a>
+        <a href="#menu">Меню</a>
+        <a href="#banquets">Банкеты</a>
+        <a href="#events">События</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:+79930757205" class="header-phone" aria-label="Позвонить">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>+7 993 075 72 05</span>
+        </a>
+        <a href="#" class="btn btn-primary btn-sm">Забронировать</a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+        <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+        <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#about">О гастробаре</a>
+      <a href="#menu">Меню</a>
+      <a href="#banquets">Банкеты</a>
+      <a href="#events">События</a>
+      <a href="#contacts">Контакты</a>
+      <a href="tel:+79930757205" class="mobile-phone">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +7 993 075 72 05
+      </a>
+      <a href="#" class="btn btn-primary">Забронировать столик</a>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="images/hero-food.jpg" alt="Атмосферное фото блюда из меню гастробара Остряк" loading="eager">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-grid">
+          <div class="hero-text">
+            <div class="badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Некрасова, 44 · Санкт-Петербург
+            </div>
+            <h1>Гастробар острой кухни в центре Петербурга</h1>
+            <p class="hero-subtitle">Бургеры, тартар, стейки, гриль и авторская кухня на Некрасова, 44. Остроту блюд выбираете сами — от мягкой до огненной.</p>
+            <div class="hero-actions">
+              <a href="#" class="btn btn-primary btn-lg">Забронировать столик</a>
+              <a href="#menu" class="btn btn-outline btn-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+                Посмотреть меню
+              </a>
+            </div>
+            <div class="hero-facts">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg> Острота на выбор</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg> Бургеры · тартар · стейки · гриль</span>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg> Виниловые вечеринки по субботам</span>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-image-card">
+              <img src="images/hero-food.jpg" alt="Атмосферное фото блюда из меню гастробара Остряк" loading="eager">
+              <div class="hero-image-gradient"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>О гастробаре</h2>
+          <p>Остряк — гастробар для людей с острым умом. Здесь бургеры, тартар, стейки и гриль можно сделать подходящей вам степени остроты.</p>
+        </div>
+        <div class="cards-grid cols-4">
+          <div class="card reveal">
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg></div>
+            <h3>Острота на выбор</h3>
+            <p>Все блюда можно сделать подходящей вам степени остроты — от мягкой до огненной.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg></div>
+            <h3>Авторская кухня</h3>
+            <p>Библиотека блюд от шеф-повара Романа Семенова. Бургеры, тартар, стейки и гриль.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7z"/><path d="M9 21h6"/></svg></div>
+            <h3>Ламповый интерьер</h3>
+            <p>Стильное пространство с теплым светом, деревом и металлом. Атмосфера для людей с острым умом.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <h3>Центр Петербурга</h3>
+            <p>Уникальная локация на Некрасова, 44. Романтика центра города и удобный маршрут.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spice Scale -->
+    <section class="section spice-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Шкала остроты</h2>
+          <p>Выбирайте степень остроты под себя — от мягкой до огненной.</p>
+        </div>
+        <div class="spice-list">
+          <div class="spice-item reveal">
+            <div class="spice-flames">
+              <svg class="flame active" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+            </div>
+            <div class="spice-info">
+              <div class="spice-label-wrap">
+                <span class="spice-label">Мягко</span>
+                <div class="spice-bar"><div class="spice-fill" style="width:20%"></div></div>
+              </div>
+              <span class="spice-desc">Едва уловимая теплота</span>
+            </div>
+          </div>
+          <div class="spice-item reveal">
+            <div class="spice-flames">
+              <svg class="flame active" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame active" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+            </div>
+            <div class="spice-info">
+              <div class="spice-label-wrap">
+                <span class="spice-label">Пикантно</span>
+                <div class="spice-bar"><div class="spice-fill" style="width:40%"></div></div>
+              </div>
+              <span class="spice-desc">Мягкая остринка</span>
+            </div>
+          </div>
+          <div class="spice-item reveal">
+            <div class="spice-flames">
+              <svg class="flame active" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame active" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame active" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+            </div>
+            <div class="spice-info">
+              <div class="spice-label-wrap">
+                <span class="spice-label">Остро</span>
+                <div class="spice-bar"><div class="spice-fill" style="width:60%"></div></div>
+              </div>
+              <span class="spice-desc">Яркий характер</span>
+            </div>
+          </div>
+          <div class="spice-item reveal">
+            <div class="spice-flames">
+              <svg class="flame active" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame active" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame active" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame active" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+            </div>
+            <div class="spice-info">
+              <div class="spice-label-wrap">
+                <span class="spice-label">Очень остро</span>
+                <div class="spice-bar"><div class="spice-fill" style="width:80%"></div></div>
+              </div>
+              <span class="spice-desc">Серьезный огонь</span>
+            </div>
+          </div>
+          <div class="spice-item reveal">
+            <div class="spice-flames">
+              <svg class="flame active" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame active" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame active" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame active" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+              <svg class="flame active" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-2.072-2.143-3-5a2.5 2.5 0 1 0-3.5 3.5c1.5 1.5 3 2.5 4 5 .5 1 1 1.5 1.5 2Z"/><path d="M12 22c-4.97-4.54-6-9.5-6-14.5"/><path d="M18.5 14.5A2.5 2.5 0 0 1 16 12c0-1.38.5-2 1-3 1.072-2.143 2.072-2.143 3-5a2.5 2.5 0 1 1 3.5 3.5c-1.5 1.5-3 2.5-4 5-.5 1-1 1.5-1.5 2Z"/><path d="M12 22c4.97-4.54 6-9.5 6-14.5"/></svg>
+            </div>
+            <div class="spice-info">
+              <div class="spice-label-wrap">
+                <span class="spice-label">Огонь</span>
+                <div class="spice-bar"><div class="spice-fill" style="width:100%"></div></div>
+              </div>
+              <span class="spice-desc">Максимальная интенсивность</span>
+            </div>
+          </div>
+        </div>
+        <div class="section-cta">
+          <a href="#" class="btn btn-primary btn-lg">Забронировать столик</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section id="menu" class="section menu-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Меню Остряка</h2>
+          <p>Бургеры, тартар, стейки, гриль и авторская кухня. Все блюда можно сделать подходящей вам степени остроты.</p>
+        </div>
+        <div class="menu-preview-grid">
+          <button type="button" class="menu-preview-card reveal" data-open-menu aria-label="Открыть меню, категория Бургеры">
+            <img src="images/menu-1.jpg" alt="Блюдо из категории Бургеры в меню гастробара Остряк" loading="lazy">
+            <div class="menu-preview-overlay"></div>
+            <h3>Бургеры</h3>
+          </button>
+          <button type="button" class="menu-preview-card reveal" data-open-menu aria-label="Открыть меню, категория Тартар">
+            <img src="images/menu-2.jpg" alt="Блюдо из категории Тартар в меню гастробара Остряк" loading="lazy">
+            <div class="menu-preview-overlay"></div>
+            <h3>Тартар</h3>
+          </button>
+          <button type="button" class="menu-preview-card reveal" data-open-menu aria-label="Открыть меню, категория Стейки">
+            <img src="images/menu-3.jpg" alt="Блюдо из категории Стейки в меню гастробара Остряк" loading="lazy">
+            <div class="menu-preview-overlay"></div>
+            <h3>Стейки</h3>
+          </button>
+          <button type="button" class="menu-preview-card reveal" data-open-menu aria-label="Открыть меню, категория Гриль">
+            <img src="images/menu-1.jpg" alt="Блюдо из категории Гриль в меню гастробара Остряк" loading="lazy">
+            <div class="menu-preview-overlay"></div>
+            <h3>Гриль</h3>
+          </button>
+          <button type="button" class="menu-preview-card reveal" data-open-menu aria-label="Открыть меню, категория Супы">
+            <img src="images/menu-2.jpg" alt="Блюдо из категории Супы в меню гастробара Остряк" loading="lazy">
+            <div class="menu-preview-overlay"></div>
+            <h3>Супы</h3>
+          </button>
+          <button type="button" class="menu-preview-card reveal" data-open-menu aria-label="Открыть меню, категория Авторская кухня">
+            <img src="images/menu-3.jpg" alt="Блюдо из категории Авторская кухня в меню гастробара Остряк" loading="lazy">
+            <div class="menu-preview-overlay"></div>
+            <h3>Авторская кухня</h3>
+          </button>
+        </div>
+        <div class="section-cta menu-preview-cta">
+          <button type="button" class="btn btn-primary btn-xl" id="openMenu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+            Посмотреть полное меню
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fullscreen Menu Modal -->
+    <div class="menu-modal" id="menuModal" aria-hidden="true">
+      <div class="menu-modal-backdrop"></div>
+      <div class="menu-modal-content">
+        <div class="menu-modal-header">
+          <h2>Меню Остряка</h2>
+          <button type="button" class="menu-modal-close" id="closeMenu" aria-label="Закрыть меню">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <div class="menu-modal-body">
+          <div class="menu-layout">
+            <div class="menu-column">
+              <div class="menu-category">
+                <h3 class="menu-cat-title">Закуски</h3>
+                <div class="menu-list">
+                  <div class="menu-item"><span class="menu-name">Тартар из тунца</span><span class="menu-dots"></span><span class="menu-price">650</span></div>
+                  <div class="menu-item"><span class="menu-name">Тартар из форели</span><span class="menu-dots"></span><span class="menu-price">850</span></div>
+                  <div class="menu-item"><span class="menu-name">Тартар из говядины <small>с соусом тоннато</small></span><span class="menu-dots"></span><span class="menu-price">650</span></div>
+                  <div class="menu-item"><span class="menu-name">Брускетта <small>с творожным сыром и сальсой из маслин</small></span><span class="menu-dots"></span><span class="menu-price">350</span></div>
+                  <div class="menu-item"><span class="menu-name">Брускетта <small>с куриным паштетом</small></span><span class="menu-dots"></span><span class="menu-price">350</span></div>
+                  <div class="menu-item"><span class="menu-name">Брускетта <small>с кремом блючиз</small></span><span class="menu-dots"></span><span class="menu-price">350</span></div>
+                  <div class="menu-item"><span class="menu-name">Брускетта <small>с печеными баклажанами и кремом фета</small></span><span class="menu-dots"></span><span class="menu-price">350</span></div>
+                  <div class="menu-item"><span class="menu-name">Брускетта <small>с форелью слабой соли и кремом фета</small></span><span class="menu-dots"></span><span class="menu-price">450</span></div>
+                  <div class="menu-item"><span class="menu-name">Халапеньо</span><span class="menu-dots"></span><span class="menu-price">150</span></div>
+                  <div class="menu-item"><span class="menu-name">Оливки</span><span class="menu-dots"></span><span class="menu-price">450</span></div>
+                  <div class="menu-item"><span class="menu-name">Мясные чипсы</span><span class="menu-dots"></span><span class="menu-price">250</span></div>
+                  <div class="menu-item"><span class="menu-name">Сыровяленая говядина</span><span class="menu-dots"></span><span class="menu-price">450</span></div>
+                  <div class="menu-item"><span class="menu-name">Чеддер</span><span class="menu-dots"></span><span class="menu-price">250</span></div>
+                  <div class="menu-item"><span class="menu-name">Камамбер</span><span class="menu-dots"></span><span class="menu-price">250</span></div>
+                  <div class="menu-item"><span class="menu-name">Пармезан</span><span class="menu-dots"></span><span class="menu-price">250</span></div>
+                  <div class="menu-item"><span class="menu-name">Горгондзола</span><span class="menu-dots"></span><span class="menu-price">250</span></div>
+                  <div class="menu-item"><span class="menu-name">Сырная тарелка, 4 сыра</span><span class="menu-dots"></span><span class="menu-price">900</span></div>
+                </div>
+              </div>
+              <div class="menu-category">
+                <h3 class="menu-cat-title">Горячие закуски</h3>
+                <div class="menu-list">
+                  <div class="menu-item"><span class="menu-name">Картофель фри</span><span class="menu-dots"></span><span class="menu-price">250</span></div>
+                  <div class="menu-item"><span class="menu-name">Батат фри</span><span class="menu-dots"></span><span class="menu-price">350</span></div>
+                  <div class="menu-item"><span class="menu-name">Картофель фри <small>с пармезаном и трюфельным маслом</small></span><span class="menu-dots"></span><span class="menu-price">350</span></div>
+                  <div class="menu-item"><span class="menu-name">Куриные крылья <small>с чесночным соусом</small></span><span class="menu-dots"></span><span class="menu-price">450</span></div>
+                </div>
+              </div>
+              <div class="menu-category">
+                <h3 class="menu-cat-title">Соусы</h3>
+                <div class="menu-list">
+                  <div class="menu-item"><span class="menu-name">Сырный</span><span class="menu-dots"></span><span class="menu-price">90</span></div>
+                  <div class="menu-item"><span class="menu-name">Чесночный</span><span class="menu-dots"></span><span class="menu-price">90</span></div>
+                  <div class="menu-item"><span class="menu-name">Кетчуп</span><span class="menu-dots"></span><span class="menu-price">90</span></div>
+                  <div class="menu-item"><span class="menu-name">Чимичури авторский</span><span class="menu-dots"></span><span class="menu-price">90</span></div>
+                  <div class="menu-item"><span class="menu-name">Томатный барбекю <small>5 перцев</small></span><span class="menu-dots"></span><span class="menu-price">90</span></div>
+                  <div class="menu-item"><span class="menu-name">Томатный барбекю <small>с перцем Каролина Рипер 🌶</small></span><span class="menu-dots"></span><span class="menu-price">90</span></div>
+                  <div class="menu-item"><span class="menu-name">Блючиз</span><span class="menu-dots"></span><span class="menu-price">90</span></div>
+                  <div class="menu-item"><span class="menu-name">Копченый терияки</span><span class="menu-dots"></span><span class="menu-price">90</span></div>
+                  <div class="menu-item"><span class="menu-name">Мексиканская сальса</span><span class="menu-dots"></span><span class="menu-price">90</span></div>
+                  <div class="menu-item"><span class="menu-name">Трюфельный айоли</span><span class="menu-dots"></span><span class="menu-price">90</span></div>
+                  <div class="menu-item"><span class="menu-name">Бургер соус</span><span class="menu-dots"></span><span class="menu-price">90</span></div>
+                </div>
+              </div>
+              <div class="menu-category">
+                <h3 class="menu-cat-title">Салаты</h3>
+                <div class="menu-list">
+                  <div class="menu-item"><span class="menu-name">Салат с грейпфрутом и кремом блючиз</span><span class="menu-dots"></span><span class="menu-price">550</span></div>
+                  <div class="menu-item"><span class="menu-name">Зеленый салат с авокадо и песто из трех трав</span><span class="menu-dots"></span><span class="menu-price">650</span></div>
+                  <div class="menu-item"><span class="menu-name">Салат с креветками и творожным сыром</span><span class="menu-dots"></span><span class="menu-price">750</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="menu-column">
+              <div class="menu-category">
+                <h3 class="menu-cat-title">Супы</h3>
+                <div class="menu-list">
+                  <div class="menu-item"><span class="menu-name">Томатный суп <small>с брускеттой и запеченным чеддером</small></span><span class="menu-dots"></span><span class="menu-price">450</span></div>
+                  <div class="menu-item"><span class="menu-name">Суп-пюре <small>кукурузно-кокосовый с креветками</small></span><span class="menu-dots"></span><span class="menu-price">650</span></div>
+                  <div class="menu-item"><span class="menu-name">Сливочный суп <small>с форелью и креветками</small></span><span class="menu-dots"></span><span class="menu-price">750</span></div>
+                </div>
+              </div>
+              <div class="menu-category">
+                <h3 class="menu-cat-title">Бургеры</h3>
+                <div class="menu-list">
+                  <div class="menu-item"><span class="menu-name">Бургер с куриной грудкой</span><span class="menu-dots"></span><span class="menu-price">650</span></div>
+                  <div class="menu-item"><span class="menu-name">Бургер мексиканский <small>с мраморной говядиной</small></span><span class="menu-dots"></span><span class="menu-price">750</span></div>
+                  <div class="menu-item"><span class="menu-name">Бургер с мраморной говядиной <small>и луковым мармеладом</small></span><span class="menu-dots"></span><span class="menu-price">750</span></div>
+                  <div class="menu-item"><span class="menu-name">Бургер с креветками</span><span class="menu-dots"></span><span class="menu-price">850</span></div>
+                  <div class="menu-item"><span class="menu-name">Бургер фирменный <small>с мраморной говядиной, инжирным вареньем и сыром камамбер и чеддер</small></span><span class="menu-dots"></span><span class="menu-price">1100</span></div>
+                </div>
+              </div>
+              <div class="menu-category">
+                <h3 class="menu-cat-title">Основное блюдо</h3>
+                <div class="menu-list">
+                  <div class="menu-item"><span class="menu-name">Куриная грудка гриль <small>с кремом блючиз и печеными баклажанами</small></span><span class="menu-dots"></span><span class="menu-price">700</span></div>
+                  <div class="menu-item"><span class="menu-name">Свиные отбивные <small>с грибами и картофелем</small></span><span class="menu-dots"></span><span class="menu-price">700</span></div>
+                  <div class="menu-item"><span class="menu-name">Стейк Пиканья <small>с салатом из маринованных огурцов и соусом перечный барбекю</small></span><span class="menu-dots"></span><span class="menu-price">1250</span></div>
+                  <div class="menu-item"><span class="menu-name">Запеченная форель <small>с овощами гриль и соусом копченый терияки</small></span><span class="menu-dots"></span><span class="menu-price">1250</span></div>
+                  <div class="menu-item"><span class="menu-name">Ремесленный хлеб <small>с розмариновым маслом</small></span><span class="menu-dots"></span><span class="menu-price">200</span></div>
+                </div>
+              </div>
+              <div class="menu-category">
+                <h3 class="menu-cat-title">Десерты</h3>
+                <div class="menu-list">
+                  <div class="menu-item"><span class="menu-name">Банановый торт <small>с соленой карамелью</small></span><span class="menu-dots"></span><span class="menu-price">400</span></div>
+                  <div class="menu-item"><span class="menu-name">Греческий йогурт <small>с брусникой, мороженым и кедровыми орехами</small></span><span class="menu-dots"></span><span class="menu-price">350</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-modal-footer">
+          <a href="#" class="btn btn-primary btn-lg">Забронировать столик</a>
+          <a href="images/menu_page1.jpg" target="_blank" class="btn btn-outline btn-sm">Меню, страница 1</a>
+          <a href="images/menu_page2.jpg" target="_blank" class="btn btn-outline btn-sm">Меню, страница 2</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banquets -->
+    <section id="banquets" class="section banquets-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Банкеты и закрытые мероприятия в Остряке</h2>
+          <p>Деловые мероприятия, свадьбы до 50 человек, камерные конференции, презентации, мастер-классы и события в центре Петербурга.</p>
+        </div>
+        <div class="cards-grid cols-3">
+          <div class="card reveal">
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"/><path d="m4 8 16-4"/><path d="m8.86 6.78-.45-1.81a2 2 0 0 1 1.45-2.43l1.94-.48a2 2 0 0 1 2.43 1.46l.45 1.8"/></svg></div>
+            <h3>Свадьбы до 50 человек</h3>
+            <p>Камерные свадебные торжества в атмосферном пространстве центра Петербурга.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+            <h3>Деловые мероприятия</h3>
+            <p>Бизнес-завтраки, конференции, презентации, собрания бизнес-клубов и мастер-классы.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg></div>
+            <h3>Живая музыка, стендап, ведущие</h3>
+            <p>Артисты и развлечения для вашего события. Проверенные подрядчики и кураторство.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0V12z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg></div>
+            <h3>Проектор, экран и микрофоны</h3>
+            <p>Полная техническая поддержка: звуковое и световое оборудование, проектор с экраном.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg></div>
+            <h3>Chef's table и мастер-классы</h3>
+            <p>Специально разработанные программы, конкурсы и кулинарные мастер-классы от шефа.</p>
+          </div>
+          <div class="card reveal">
+            <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg></div>
+            <h3>Индивидуальное меню</h3>
+            <p>Пробка и персонализированное меню под формат вашего мероприятия.</p>
+          </div>
+        </div>
+        <div class="section-cta">
+          <a href="#" class="btn btn-primary btn-lg">Обсудить банкет</a>
+          <a href="tel:+79930757205" class="btn btn-outline btn-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Позвонить
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events" class="section events-section">
+      <div class="container">
+        <div class="events-grid">
+          <div class="events-text">
+            <div class="badge">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+              Анонсы и вечеринки
+            </div>
+            <h2>События</h2>
+            <p>Мы проводим гастроужины, стендапы, вечеринки. Каждую субботу — виниловые вечеринки. Следите за анонсами.</p>
+            <a href="#" class="btn btn-outline btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Смотреть анонсы в Telegram
+            </a>
+          </div>
+          <div class="events-visual reveal">
+            <img src="images/interior.jpg" alt="Интерьер гастробара Остряк" loading="lazy">
+            <div class="events-visual-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contacts" class="section contacts-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Контакты</h2>
+        </div>
+        <div class="contacts-grid">
+          <div class="contacts-info">
+            <div class="contacts-card">
+              <div class="contact-row">
+                <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+                <div>
+                  <p class="contact-label">Адрес</p>
+                  <p class="contact-value">ул. Некрасова, 44, Санкт-Петербург</p>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+                <div>
+                  <p class="contact-label">Телефон</p>
+                  <a href="tel:+79930757205" class="contact-value hover-accent">+7 993 075 72 05</a>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+                <div>
+                  <p class="contact-label">Режим работы</p>
+                  <p class="contact-value">Вс–Чт 12:00–23:00</p>
+                  <p class="contact-value">Пт–Сб 12:00–02:00</p>
+                </div>
+              </div>
+            </div>
+            <div class="contacts-actions">
+              <a href="tel:+79930757205" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Позвонить
+              </a>
+              <a href="https://yandex.ru/maps/?text=ул.+Некрасова,+44,+Санкт-Петербург" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+                Построить маршрут
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Telegram</a>
+              <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline">WhatsApp</a>
+              <a href="#" class="btn btn-outline">Забронировать столик</a>
+            </div>
+          </div>
+          <div class="contacts-map reveal">
+            <img src="images/banquet.jpg" alt="Банкетный зал гастробара Остряк" loading="lazy">
+            <a href="https://yandex.ru/maps/?text=ул.+Некрасова,+44,+Санкт-Петербург" target="_blank" rel="noopener noreferrer" class="map-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+              Открыть на карте
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">Остряк</a>
+          <p>Гастробар острой кухни в центре Петербурга. Бургеры, тартар, стейки, гриль и авторская кухня.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Навигация</h4>
+          <ul>
+            <li><a href="#about">О гастробаре</a></li>
+            <li><a href="#menu">Меню</a></li>
+            <li><a href="#banquets">Банкеты</a></li>
+            <li><a href="#events">События</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-contacts">
+          <h4>Контакты</h4>
+          <ul>
+            <li>ул. Некрасова, 44, Санкт-Петербург</li>
+            <li><a href="tel:+79930757205">+7 993 075 72 05</a></li>
+            <li>Вс–Чт 12:00–23:00</li>
+            <li>Пт–Сб 12:00–02:00</li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Соцсети</h4>
+          <div class="social-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Гастробар Остряк. Все права защищены.</p>
+        <p>Некрасова, 44 · Санкт-Петербург</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="mobile-sticky">
+    <a href="#menu" class="sticky-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></svg>
+      <span>Меню</span>
+    </a>
+    <a href="#" class="sticky-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+      <span>Бронь</span>
+    </a>
+    <a href="tel:+79930757205" class="sticky-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Позвонить</span>
+    </a>
+    <a href="https://yandex.ru/maps/?text=ул.+Некрасова,+44,+Санкт-Петербург" target="_blank" rel="noopener noreferrer" class="sticky-item">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+      <span>Маршрут</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
