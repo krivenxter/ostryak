@@ -135,7 +135,7 @@ ul { list-style: none; }
   display: flex; align-items: center; gap: 8px;
   margin-top: 4px;
 }
-.nav-mobile .btn-primary { margin-top: 8px; border-radius: 999px; justify-content: center; }
+.nav-mobile .btn-primary { margin-top: 8px; border-radius: 999px; justify-content: center; color: #fff; }
 
 @media (min-width: 1024px) {
   .header-inner { height: 80px; }
