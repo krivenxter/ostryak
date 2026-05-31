@@ -305,44 +305,45 @@ ul { list-style: none; }
 }
 
 /* ===== Spice Section ===== */
-.spice-section { background: rgba(255,255,255,0.02); }
-.spice-list { display: flex; flex-direction: column; gap: 12px; }
+.spice-section { background: rgba(255,255,255,0.02); padding: 60px 0; }
+@media (min-width: 768px) { .spice-section { padding: 80px 0; } }
+.spice-list { display: flex; flex-direction: column; gap: 8px; }
 .spice-item {
-  display: flex; align-items: center; gap: 16px;
-  padding: 16px 20px;
-  border-radius: var(--radius-lg);
+  display: flex; align-items: center; gap: 12px;
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
   background: var(--surface);
   border: 1px solid rgba(255,255,255,0.05);
   transition: border-color 0.3s ease;
 }
 .spice-item:hover { border-color: rgba(196,30,58,0.2); }
 .spice-flames {
-  display: flex; align-items: center; gap: 4px; flex-shrink: 0;
+  display: flex; align-items: center; gap: 3px; flex-shrink: 0;
 }
 .spice-flames .flame {
-  width: 26px; height: 26px; fill: rgba(255,255,255,0.12);
+  width: 18px; height: 18px; fill: rgba(255,255,255,0.12);
   flex-shrink: 0;
 }
 .spice-flames .flame.active { fill: var(--accent); }
 .spice-info { flex: 1; min-width: 0; }
 .spice-label-wrap {
-  display: flex; align-items: center; gap: 12px;
+  display: flex; align-items: center; gap: 10px;
 }
-.spice-label { font-size: 17px; font-weight: 600; color: var(--text-primary); white-space: nowrap; }
+.spice-label { font-size: 15px; font-weight: 600; color: var(--text-primary); white-space: nowrap; }
 .spice-bar {
-  flex: 1; height: 6px; border-radius: 999px;
+  flex: 1; height: 4px; border-radius: 999px;
   background: rgba(255,255,255,0.06); overflow: hidden;
 }
 .spice-fill {
   height: 100%; border-radius: 999px; background: var(--accent);
   transition: width 1s ease;
 }
-.spice-desc { font-size: 14px; color: var(--text-secondary); margin-top: 4px; display: block; }
+.spice-desc { font-size: 13px; color: var(--text-secondary); margin-top: 2px; display: block; }
 
 @media (min-width: 640px) {
-  .spice-item { padding: 20px 28px; gap: 24px; }
-  .spice-flames .flame { width: 28px; height: 28px; }
-  .spice-label { font-size: 19px; }
+  .spice-item { padding: 12px 20px; gap: 16px; }
+  .spice-flames .flame { width: 20px; height: 20px; }
+  .spice-label { font-size: 16px; }
 }
 
 /* ===== Menu Preview Cards ===== */
