@@ -202,6 +202,9 @@ ul { list-style: none; }
   display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
   margin-bottom: 24px;
 }
+.hero-meta .badge {
+  margin-bottom: 0;
+}
 .rating-badge {
   display: inline-flex; align-items: center; gap: 5px;
   padding: 6px 14px;
@@ -229,7 +232,9 @@ ul { list-style: none; }
   border-radius: var(--radius-xl);
   overflow: hidden;
   border: 1px solid rgba(255,255,255,0.06);
-  aspect-ratio: 4/5;
+  aspect-ratio: 4/4.5;
+  max-height: 68vh;
+  margin: auto;
 }
 .hero-image-card img {
   width: 100%; height: 100%; object-fit: cover; opacity: 0.8;
@@ -321,6 +326,32 @@ ul { list-style: none; }
 }
 .card p {
   font-size: 15px; color: var(--text-secondary); line-height: 1.6;
+}
+
+/* ===== Vinyl Section ===== */
+.vinyl-section { padding: 24px 0; }
+@media (min-width: 768px) { .vinyl-section { padding: 32px 0; } }
+.vinyl-banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 28px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(196,30,58,0.12) 0%, rgba(196,30,58,0.03) 100%);
+  border: 1px solid rgba(196,30,58,0.15);
+}
+.vinyl-icon {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: rgba(196,30,58,0.15);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--accent); flex-shrink: 0;
+}
+.vinyl-text h3 {
+  font-size: 18px; font-weight: 600; margin-bottom: 4px; color: var(--text-primary);
+}
+.vinyl-text p {
+  font-size: 15px; color: var(--text-secondary); line-height: 1.5;
 }
 
 /* ===== Spice Section ===== */
