@@ -8,6 +8,7 @@
   --amber: #f59e0b;
   --text-primary: #fafaf9;
   --text-secondary: #a8a29e;
+  --text-accent: #c41e3a;
   --radius-sm: 12px;
   --radius-md: 16px;
   --radius-lg: 24px;
@@ -19,7 +20,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
   background: var(--bg);
   color: var(--text-primary);
   line-height: 1.6;
@@ -39,6 +40,10 @@ ul { list-style: none; }
 }
 @media (min-width: 640px) { .container { padding: 0 24px; } }
 @media (min-width: 1024px) { .container { padding: 0 32px; } }
+@media (min-width: 1920px) { .container { max-width: 1520px; } }
+@media (min-width: 2560px) { .container { max-width: 1720px; } }
+
+.text-accent { color: var(--accent); }
 
 /* ===== Buttons ===== */
 .btn {
@@ -296,9 +301,10 @@ ul { list-style: none; }
   display: flex; align-items: center; gap: 4px; flex-shrink: 0;
 }
 .spice-flames .flame {
-  width: 24px; height: 24px; fill: none; stroke: rgba(255,255,255,0.1); stroke-width: 2;
+  width: 26px; height: 26px; fill: rgba(255,255,255,0.12);
+  flex-shrink: 0;
 }
-.spice-flames .flame.active { stroke: var(--accent); }
+.spice-flames .flame.active { fill: var(--accent); }
 .spice-info { flex: 1; min-width: 0; }
 .spice-label-wrap {
   display: flex; align-items: center; gap: 12px;
@@ -446,17 +452,12 @@ ul { list-style: none; }
   aspect-ratio: 4/3;
   border: 1px solid rgba(255,255,255,0.05);
 }
-.contacts-map img { width: 100%; height: 100%; object-fit: cover; opacity: 0.6; }
-.map-btn {
+.contacts-map iframe {
   position: absolute; inset: 0;
-  display: flex; align-items: center; justify-content: center;
-  gap: 8px;
-  background: rgba(15,15,15,0.7);
-  backdrop-filter: blur(8px);
-  font-size: 15px; font-weight: 600; color: var(--text-primary);
-  transition: background 0.3s ease;
+  width: 100%; height: 100%;
+  border: none;
+  filter: grayscale(0.4) contrast(1.1);
 }
-.map-btn:hover { background: rgba(15,15,15,0.85); }
 
 @media (min-width: 1024px) {
   .contacts-grid { grid-template-columns: 1fr 1fr; gap: 48px; }
