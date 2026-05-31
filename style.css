@@ -150,11 +150,11 @@ ul { list-style: none; }
   position: relative;
   min-height: 100dvh;
   display: flex; align-items: center;
-  padding-top: 104px;
+  padding-top: 64px;
   overflow: hidden;
 }
 @media (min-width: 1024px) {
-  .hero { padding-top: 128px; }
+  .hero { padding-top: 80px; }
 }
 .hero-bg {
   position: absolute; inset: 0; z-index: 0;
@@ -569,6 +569,32 @@ ul { list-style: none; }
   .mobile-sticky { display: none; }
 }
 
+/* ===== Hero Load Animations ===== */
+.hero-text > * {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: hero-fade-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.hero-text .badge      { animation-delay: 0.1s; }
+.hero-text h1          { animation-delay: 0.2s; }
+.hero-text .hero-subtitle { animation-delay: 0.35s; }
+.hero-text .hero-rating   { animation-delay: 0.45s; }
+.hero-text .hero-actions  { animation-delay: 0.55s; }
+.hero-text .hero-facts    { animation-delay: 0.65s; }
+
+.hero-visual {
+  opacity: 0;
+  transform: translateX(40px) scale(0.95);
+  animation: hero-visual-in 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+}
+
+@keyframes hero-fade-in {
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes hero-visual-in {
+  to { opacity: 1; transform: translateX(0) scale(1); }
+}
+
 /* ===== Scroll Reveal ===== */
 .reveal {
   opacity: 0;
@@ -601,22 +627,18 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
 
 /* ===== Marquee ===== */
 .marquee {
-  position: fixed;
-  top: 64px;
-  left: 0; right: 0;
-  z-index: 45;
   background: linear-gradient(90deg, var(--accent) 0%, #a31830 100%);
   color: #fff;
   font-size: 13px;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 8px 0;
+  padding: 10px 0;
   overflow: hidden;
   white-space: nowrap;
 }
 @media (min-width: 1024px) {
-  .marquee { top: 80px; font-size: 14px; padding: 10px 0; }
+  .marquee { font-size: 14px; padding: 12px 0; }
 }
 .marquee-track {
   display: inline-flex;
