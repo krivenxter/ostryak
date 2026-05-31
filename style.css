@@ -223,7 +223,7 @@ ul { list-style: none; }
 }
 
 @media (min-width: 1024px) {
-  .hero { padding-top: 0; }
+  .hero { padding-top: 128px; }
   .hero-grid { grid-template-columns: 1fr 0.85fr; gap: 64px; }
   .hero-visual { display: block; }
 }
