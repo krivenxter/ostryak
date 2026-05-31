@@ -150,8 +150,11 @@ ul { list-style: none; }
   position: relative;
   min-height: 100dvh;
   display: flex; align-items: center;
-  padding-top: 64px;
+  padding-top: 104px;
   overflow: hidden;
+}
+@media (min-width: 1024px) {
+  .hero { padding-top: 128px; }
 }
 .hero-bg {
   position: absolute; inset: 0; z-index: 0;
@@ -262,11 +265,27 @@ ul { list-style: none; }
   border-radius: var(--radius-lg);
   background: var(--surface);
   border: 1px solid rgba(255,255,255,0.05);
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(196,30,58,0.08), transparent 40%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+.card:hover::before {
+  opacity: 1;
 }
 .card:hover {
-  border-color: rgba(196,30,58,0.2);
-  transform: translateY(-4px);
+  border-color: rgba(196,30,58,0.25);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25), 0 0 0 1px rgba(196,30,58,0.1);
 }
 .card-icon {
   width: 48px; height: 48px;
@@ -529,11 +548,24 @@ ul { list-style: none; }
 /* ===== Scroll Reveal ===== */
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(40px) scale(0.97);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .reveal.visible {
   opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Section titles text reveal */
+.section-header h2 {
+  overflow: hidden;
+}
+.section-header h2 > span {
+  display: inline-block;
+  transform: translateY(100%);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.section-header.reveal.visible h2 > span {
   transform: translateY(0);
 }
 
@@ -541,6 +573,56 @@ ul { list-style: none; }
 a:focus-visible, button:focus-visible, .btn:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+}
+
+/* ===== Marquee ===== */
+.marquee {
+  position: fixed;
+  top: 64px;
+  left: 0; right: 0;
+  z-index: 45;
+  background: linear-gradient(90deg, var(--accent) 0%, #a31830 100%);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 8px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@media (min-width: 1024px) {
+  .marquee { top: 80px; font-size: 14px; padding: 10px 0; }
+}
+.marquee-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  animation: marquee-scroll 20s linear infinite;
+  padding-right: 24px;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+.marquee-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.6);
+  flex-shrink: 0;
+}
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ===== Grain Texture ===== */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
 }
 
 /* ===== Menu Modal ===== */
