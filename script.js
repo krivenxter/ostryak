@@ -37,11 +37,11 @@ const revealObserver = new IntersectionObserver((entries) => {
 revealElements.forEach((el) => revealObserver.observe(el));
 
 // Stagger children within grids
-const staggerContainers = document.querySelectorAll('.cards-grid, .menu-preview-grid, .menu-layout, .spice-list');
+const staggerContainers = document.querySelectorAll('.cards-grid, .menu-preview-grid, .menu-layout, .spice-grid, .events-grid, .contacts-grid');
 const staggerObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      const children = entry.target.querySelectorAll('.reveal, .card, .menu-preview-card, .menu-category, .spice-item');
+      const children = entry.target.querySelectorAll('.reveal, .card, .menu-preview-card, .menu-category, .spice-card, .events-text, .contacts-card');
       children.forEach((child, i) => {
         child.style.transitionDelay = `${i * 0.08}s`;
         child.classList.add('visible');
@@ -144,7 +144,7 @@ if (menuModal) {
 }
 
 // Mouse glow effect on cards
-document.querySelectorAll('.card, .menu-preview-card').forEach((card) => {
+document.querySelectorAll('.card, .menu-preview-card, .spice-card').forEach((card) => {
   card.addEventListener('mousemove', (e) => {
     const rect = card.getBoundingClientRect();
     card.style.setProperty('--mouse-x', `${e.clientX - rect.left}px`);
