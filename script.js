@@ -51,7 +51,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 revealElements.forEach((el) => revealObserver.observe(el));
 
 // Stagger children within grids
-const staggerContainers = document.querySelectorAll('.cards-grid, .menu-preview-grid, .menu-layout, .spice-grid, .events-grid, .contacts-grid, .gallery-grid');
+const staggerContainers = document.querySelectorAll('.cards-grid, .menu-preview-grid, .menu-layout, .spice-grid, .events-grid, .contacts-grid, .gallery-split');
 const staggerObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
