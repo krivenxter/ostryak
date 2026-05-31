@@ -727,6 +727,26 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
 }
 body.menu-open { overflow: hidden; }
 
+/* Custom scrollbar for menu modal */
+.menu-modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+.menu-modal-body::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.03);
+  border-radius: 999px;
+}
+.menu-modal-body::-webkit-scrollbar-thumb {
+  background: rgba(196,30,58,0.5);
+  border-radius: 999px;
+}
+.menu-modal-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(196,30,58,0.8);
+}
+.menu-modal-body {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(196,30,58,0.5) rgba(255,255,255,0.03);
+}
+
 /* ===== Menu ===== */
 .menu-layout {
   display: grid;
