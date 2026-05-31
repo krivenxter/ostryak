@@ -150,11 +150,11 @@ ul { list-style: none; }
   position: relative;
   min-height: 92dvh;
   display: flex; align-items: center;
-  padding-top: 64px;
+  padding-top: 88px;
   overflow: hidden;
 }
 @media (min-width: 1024px) {
-  .hero { padding-top: 80px; }
+  .hero { padding-top: 104px; }
 }
 .hero-bg {
   position: absolute; inset: 0; z-index: 0;
