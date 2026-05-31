@@ -345,61 +345,109 @@ ul { list-style: none; }
   .card p { font-size: 20px; }
 }
 
-/* ===== Interior Gallery ===== */
-.gallery-split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  align-items: start;
-}
-@media (min-width: 640px) {
-  .gallery-split { gap: 20px; }
-}
-@media (min-width: 1024px) {
-  .gallery-split { gap: 24px; }
-}
-@media (min-width: 2560px) {
-  .gallery-split { gap: 32px; }
-}
-
-.gallery-col {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-@media (min-width: 640px) {
-  .gallery-col { gap: 20px; }
-}
-@media (min-width: 1024px) {
-  .gallery-col { gap: 24px; }
-}
-@media (min-width: 2560px) {
-  .gallery-col { gap: 32px; }
-}
-
-.gallery-col-right {
-  margin-top: 64px;
-}
-@media (min-width: 640px) {
-  .gallery-col-right { margin-top: 96px; }
-}
-@media (min-width: 1024px) {
-  .gallery-col-right { margin-top: 140px; }
-}
-
-.gallery-cell {
+/* ===== Interior Gallery Carousel ===== */
+.gallery-carousel {
   position: relative;
+}
+.carousel-track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 5vw;
+}
+.carousel-track::-webkit-scrollbar { display: none; }
+@media (min-width: 1024px) {
+  .carousel-track { gap: 24px; padding: 0 8vw; }
+}
+
+.carousel-slide {
+  flex: 0 0 auto;
+  width: 80vw;
+  max-width: 900px;
+  aspect-ratio: 4/3;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  aspect-ratio: 3/4;
+  scroll-snap-align: center;
   border: 1px solid rgba(255,255,255,0.05);
+  position: relative;
 }
-.gallery-cell img {
+@media (min-width: 1024px) {
+  .carousel-slide { width: 55vw; max-width: 1100px; }
+}
+
+.carousel-slide img {
   width: 100%; height: 100%; object-fit: cover;
-  transition: transform 0.6s ease;
+  transition: transform 0.7s ease;
+  display: block;
 }
-.gallery-cell:hover img {
-  transform: scale(1.05);
+.carousel-slide:hover img {
+  transform: scale(1.04);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.25s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+.gallery-carousel:hover .carousel-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+.carousel-btn:hover {
+  background: rgba(0,0,0,0.7);
+  border-color: rgba(255,255,255,0.2);
+}
+.carousel-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+.carousel-prev { left: 16px; }
+.carousel-next { right: 16px; }
+@media (min-width: 1024px) {
+  .carousel-prev { left: 24px; }
+  .carousel-next { right: 24px; }
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+.carousel-dot.active {
+  background: var(--accent);
+  width: 28px;
+  border-radius: 999px;
 }
 
 /* ===== Vinyl Section ===== */
@@ -741,7 +789,7 @@ ul { list-style: none; }
 .spice-card,
 .events-text,
 .contacts-card,
-.gallery-cell {
+.carousel-slide {
   opacity: 0;
   transform: translateY(40px) scale(0.97);
   transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
@@ -752,7 +800,7 @@ ul { list-style: none; }
 .spice-card.visible,
 .events-text.visible,
 .contacts-card.visible,
-.gallery-cell.visible {
+.carousel-slide.visible {
   opacity: 1;
   transform: translateY(0) scale(1);
 }
@@ -1025,7 +1073,7 @@ body.menu-open { overflow: hidden; }
 /* ===== Reduced Motion ===== */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .reveal, .card, .menu-preview-card, .spice-card, .events-text, .contacts-card, .gallery-cell { opacity: 1; transform: none; transition: none; }
+  .reveal, .card, .menu-preview-card, .spice-card, .events-text, .contacts-card, .carousel-slide { opacity: 1; transform: none; transition: none; }
   .card, .menu-card, .spice-card { transition: none; }
   .hero-bg img, .menu-card img { transition: none; }
 }

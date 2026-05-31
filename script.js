@@ -51,11 +51,11 @@ const revealObserver = new IntersectionObserver((entries) => {
 revealElements.forEach((el) => revealObserver.observe(el));
 
 // Stagger children within grids
-const staggerContainers = document.querySelectorAll('.cards-grid, .menu-preview-grid, .menu-layout, .spice-grid, .events-grid, .contacts-grid, .gallery-split');
+const staggerContainers = document.querySelectorAll('.cards-grid, .menu-preview-grid, .menu-layout, .spice-grid, .events-grid, .contacts-grid');
 const staggerObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      const children = entry.target.querySelectorAll('.reveal, .card, .menu-preview-card, .menu-category, .spice-card, .events-text, .contacts-card, .gallery-cell');
+      const children = entry.target.querySelectorAll('.reveal, .card, .menu-preview-card, .menu-category, .spice-card, .events-text, .contacts-card');
       children.forEach((child, i) => {
         child.style.transitionDelay = `${i * 0.08}s`;
         child.classList.add('visible');
@@ -69,6 +69,94 @@ const staggerObserver = new IntersectionObserver((entries) => {
 });
 
 staggerContainers.forEach((el) => staggerObserver.observe(el));
+
+// Interior Carousel
+(function initCarousel() {
+  const track = document.querySelector('.carousel-track');
+  const slides = document.querySelectorAll('.carousel-slide');
+  const prevBtn = document.querySelector('.carousel-prev');
+  const nextBtn = document.querySelector('.carousel-next');
+  const dotsContainer = document.querySelector('.carousel-dots');
+  if (!track || slides.length === 0) return;
+
+  // Build dots
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', `Слайд ${i + 1}`);
+    dot.addEventListener('click', () => goToSlide(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  let currentSlide = 0;
+  const dots = () => document.querySelectorAll('.carousel-dot');
+
+  function goToSlide(index) {
+    currentSlide = Math.max(0, Math.min(index, slides.length - 1));
+    slides[currentSlide].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    dots().forEach((dot, i) => dot.classList.toggle('active', i === currentSlide));
+  }
+
+  if (prevBtn) prevBtn.addEventListener('click', () => goToSlide(currentSlide - 1));
+  if (nextBtn) nextBtn.addEventListener('click', () => goToSlide(currentSlide + 1));
+
+  // IntersectionObserver to track active slide
+  const slideObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+        const idx = Array.from(slides).indexOf(entry.target);
+        currentSlide = idx;
+        dots().forEach((dot, i) => dot.classList.toggle('active', i === idx));
+      }
+    });
+  }, { root: track, threshold: 0.5 });
+
+  slides.forEach(slide => slideObserver.observe(slide));
+
+  // Drag to scroll
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  track.addEventListener('mousedown', (e) => {
+    isDown = true;
+    track.style.cursor = 'grabbing';
+    track.style.scrollBehavior = 'auto';
+    startX = e.pageX - track.offsetLeft;
+    scrollLeft = track.scrollLeft;
+  });
+
+  track.addEventListener('mouseleave', () => {
+    if (!isDown) return;
+    isDown = false;
+    track.style.cursor = 'grab';
+    snapToNearest();
+  });
+
+  track.addEventListener('mouseup', () => {
+    if (!isDown) return;
+    isDown = false;
+    track.style.cursor = 'grab';
+    snapToNearest();
+  });
+
+  track.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - track.offsetLeft;
+    const walk = (x - startX) * 1.8;
+    track.scrollLeft = scrollLeft - walk;
+  });
+
+  track.style.cursor = 'grab';
+
+  function snapToNearest() {
+    track.style.scrollBehavior = 'smooth';
+    const slideWidth = slides[0].offsetWidth + parseInt(getComputedStyle(track).gap || 16);
+    const nearest = Math.round(track.scrollLeft / slideWidth);
+    goToSlide(nearest);
+  }
+})();
 
 // Header scroll effect
 const header = document.getElementById('header');
